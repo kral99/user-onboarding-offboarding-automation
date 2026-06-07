@@ -3,9 +3,11 @@ PowerShell automation project for IT user onboarding, offboarding, group assignm
 
 ## Overview
 
-This is a PowerShell-based IT automation side project designed to streamline common user lifecycle tasks, including onboarding, offboarding, group assignment, CSV-based input, and audit logging.
+This is a PowerShell-based IT automation side project designed to demonstrate common user lifecycle workflows used in IT Support, Helpdesk, Desktop Support, and Junior System Administrator roles.
 
-The project demonstrates practical scripting skills for IT Support, Helpdesk, Desktop Support, and Junior System Administrator roles.
+The project includes sample workflows for onboarding and offboarding users from CSV files. It is designed to show how repetitive IT administration tasks can be standardized, validated, and logged for better consistency.
+
+This project can be structured to support both traditional Active Directory environments and Microsoft Entra ID environments through separate script versions.
 
 ## Features
 
