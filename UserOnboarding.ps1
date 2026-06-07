@@ -43,7 +43,6 @@ function Split-GroupList {
 function Escape-ODataString {
     param([string]$Value)
 
-    # In Microsoft Graph OData filters, single quotes must be escaped as two single quotes
     return $Value -replace "'", "''"
 }
 
@@ -133,7 +132,6 @@ function Add-UserToEntraGroups {
         $safeGroupName = Escape-ODataString $groupName
 
         # Find the Entra group by display name
-        # In production, using Group ID is safer because display names may not be unique
         $matchedGroups = @(Get-MgGroup -Filter "displayName eq '$safeGroupName'" -ErrorAction SilentlyContinue)
 
         if ($matchedGroups.Count -eq 0) {
@@ -177,7 +175,7 @@ foreach ($user in $users) {
 
     if (-not $existingADUser) {
         # Create the on-prem AD user
-        # Do not create the Entra ID user directly because AD Connect will sync it
+        # AD Connect will sync it
         New-ADUser `
             -Name $displayName `
             -GivenName $user.FirstName `
@@ -217,7 +215,7 @@ foreach ($user in $users) {
 
     Write-Host "Found Entra ID user: $upn"
 
-    # Set UsageLocation because it is required for many Microsoft 365 license scenarios
+    # Set UsageLocation 
     Update-MgUser -UserId $cloudUser.Id -UsageLocation $UsageLocation
 
     Add-UserToEntraGroups `
