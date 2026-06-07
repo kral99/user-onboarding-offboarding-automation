@@ -1,0 +1,4 @@
+FirstName,LastName,Username,Department,JobTitle,ADGroups,EntraGroups
+John,Smith,jsmith,IT,Helpdesk Technician,"IT Support;VPN Users","M365 Standard"
+Amy,Chen,achen,Finance,Accounting Assistant,"Finance Team","M365 Standard"
+David,Lee,dlee,Operations,Operations Coordinator,"Operations Team;VPN Users","M365 Standard"
