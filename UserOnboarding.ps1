@@ -115,7 +115,6 @@ function Wait-EntraUser {
         }
 
         Write-Host "Waiting for Entra ID user: $UserPrincipalName"
-        Start-Sleep -Seconds 60
     }
 
     return $null
