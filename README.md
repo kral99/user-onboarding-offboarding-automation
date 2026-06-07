@@ -28,13 +28,10 @@ This project can be structured to support both traditional Active Directory envi
 
 - new_users_sample.csv:
 
-  
-FirstName,LastName,Username,Department,JobTitle,Groups
-John,Smith,jsmith,IT,Helpdesk Technician,"IT Support;VPN Users"
-Amy,Chen,achen,Finance,Accounting Assistant,"Finance Team;M365 Standard"
-David,Lee,dlee,Operations,Operations Coordinator,"Operations Team;VPN Users"
-Samantha,Wong,swong,HR,HR Assistant,"HR Team;M365 Standard"
-Michael,Brown,mbrown,Sales,Sales Representative,"Sales Team;CRM Users"
+FirstName,LastName,Username,Department,JobTitle,ADGroups,EntraGroups
+John,Smith,jsmith,IT,Helpdesk Technician,"IT Support;VPN Users","M365 Standard"
+Amy,Chen,achen,Finance,Accounting Assistant,"Finance Team","M365 Standard"
+David,Lee,dlee,Operations,Operations Coordinator,"Operations Team;VPN Users","M365 Standard"
 
 
 - Onboarding CSV file Location: New_User/new_users_sample.csv
@@ -64,10 +61,10 @@ Michael,Brown,mbrown,Sales,Sales Representative,"Sales Team;CRM Users"
 
 - offboarding_users_sample.csv:
 
-  Username,FullName,Department,Reason,RemoveGroups
-jsmith,John Smith,IT,Resigned,"IT Support;VPN Users"
-achen,Amy Chen,Finance,Contract Ended,"Finance Team;M365 Standard"
-dlee,David Lee,Operations,Transferred,"Operations Team;VPN Users"
+Username,FullName,Department,Reason,ADGroups,EntraGroups
+jsmith,John Smith,IT,Resigned,"IT Support;VPN Users","M365 Standard"
+achen,Amy Chen,Finance,Contract ended,"Finance Team","M365 Standard"
+dlee,David Lee,Operations,Terminated,"Operations Team;VPN Users","M365 Standard"
 
 
 - Offboarding CSV file Location: Offboard_User/offboarding_users_sample.csv
