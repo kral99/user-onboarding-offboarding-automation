@@ -46,8 +46,7 @@ David,Lee,dlee,Operations,Operations Coordinator,"Operations Team;VPN Users","M3
 
 
 
-- Command: .\scripts\UserOnboarding.ps1 -CsvPath .\New_User\new_users_sample.csv
-
+- Command: .\scripts\UserOnboarding.ps1 -CsvPath .\New_User\new_users_sample.csv -DomainName "company.com" -ADConnectServer "CONNECT01"
 
 
 - Meaning: Run the onboarding PowerShell script and use new_users_sample.csv as the input file.
