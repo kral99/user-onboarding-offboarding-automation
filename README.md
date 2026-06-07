@@ -64,7 +64,7 @@ David,Lee,dlee,Operations,Operations Coordinator,"Operations Team;VPN Users","M3
 Username,FullName,Department,Reason,ADGroups,EntraGroups
 jsmith,John Smith,IT,Resigned,"IT Support;VPN Users","M365 Standard"
 achen,Amy Chen,Finance,Contract ended,"Finance Team","M365 Standard"
-dlee,David Lee,Operations,Terminated,"Operations Team;VPN Users","M365 Standard"
+dlee,David Lee,Operations,Terminated,"Operations Team;VPN Users",","M365 Standard"
 
 
 - Offboarding CSV file Location: Offboard_User/offboarding_users_sample.csv
