@@ -35,19 +35,19 @@ Samantha,Wong,swong,HR,HR Assistant,"HR Team;M365 Standard"
 Michael,Brown,mbrown,Sales,Sales Representative,"Sales Team;CRM Users"
 
 
-- Onboarding CSV file Location: New User/new_users_sample.csv
+- Onboarding CSV file Location: New_User/new_users_sample.csv
 
 
 
-- The onboarding script file name: New-UserOnboarding.ps1
+- The onboarding script file name: UserOnboarding.ps1
 
 
 
-- onboarding script file Location: scripts/New-UserOnboarding.ps1
+- onboarding script file Location: scripts/UserOnboarding.ps1
 
 
 
-- Command: .\scripts\New-UserOnboarding.ps1 -CsvPath .\New User\new_users_sample.csv
+- Command: .\scripts\UserOnboarding.ps1 -CsvPath .\New_User\new_users_sample.csv
 
 
 
@@ -58,10 +58,28 @@ Michael,Brown,mbrown,Sales,Sales Representative,"Sales Team;CRM Users"
 
 
 ## Offboarding
-Onboarding CSV file name
+- Offboarding CSV file name: offboarding_users_sample.csv
 
-new_users_sample.csv
+- offboarding_users_sample.csv:
 
-offboarding CSV file name
+  Username,FullName,Department,Reason,RemoveGroups
+jsmith,John Smith,IT,Resigned,"IT Support;VPN Users"
+achen,Amy Chen,Finance,Contract Ended,"Finance Team;M365 Standard"
+dlee,David Lee,Operations,Transferred,"Operations Team;VPN Users"
 
-offboarding_users_sample.csv
+
+- Offboarding CSV file Location: Offboard_User/offboarding_users_sample.csv
+
+- The offboarding script file name: UserOffboarding.ps1
+
+- offboarding script file Location: scripts/UserOffboarding.ps1
+
+- Command: .\scripts\UserOffboarding.ps1 -CsvPath .\New_User\offboarding_users_sample.csv
+
+- Meaning: Run the offboarding script and use the offboarding users CSV file as input.
+
+## Security Notes
+
+This project uses fake sample data only.
+
+No real company information, passwords, tenant IDs, server names, or internal account details are included.
